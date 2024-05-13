@@ -73,18 +73,29 @@ class _UserFormState extends State<UserForm> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      TextFormField(
-                          controller: firstnameController,
-                          decoration: InputDecoration(labelText: 'First Name')),
-                      TextFormField(
-                          controller: lastnameController,
-                          decoration: InputDecoration(labelText: 'Last Name')),
-                      TextFormField(
-                          controller:
-                              emailController, // Added email input field
-                          decoration: InputDecoration(labelText: 'Email')),
+                      TextField(
+                        controller: firstnameController,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: 'First Name',
+                        ),
+                      ),
+                                            TextField(
+                        controller: lastnameController,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: 'Last Name',
+                        ),
+                      ),
+                                            TextField(
+                        controller: emailController,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(),
+                          labelText: 'Email',
+                        ),
+                      ),
                       TextButton.icon(
-                        onPressed: () =>  _addUser(),
+                        onPressed: () => _addUser(),
                         icon: const Icon(Icons.add),
                         label: const Text("Adicionar"),
                         style: ButtonStyle(
