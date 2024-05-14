@@ -28,7 +28,7 @@ class MyHomePage extends StatelessWidget {
       length: 2, // Número de abas
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 0, 0, 0),
+          backgroundColor: const Color.fromARGB(255, 0, 0, 0),
           title: const Text('Usuários', style: TextStyle(color: Colors.white),),
           centerTitle: true,
           bottom: const TabBar(

@@ -58,7 +58,7 @@ class _UserListState extends State<UserList> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Center(child:Padding(padding: EdgeInsets.fromLTRB(0, 0, 0, 15), child:  Text(user.firstName + " " + user.lastName),)), 
+        title: Center(child:Padding(padding: const EdgeInsets.fromLTRB(0, 0, 0, 15), child:  Text(user.firstName + " " + user.lastName),)), 
       
         content: SingleChildScrollView(
           child: Column(

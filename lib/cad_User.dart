@@ -61,7 +61,7 @@ class _UserFormState extends State<UserForm> {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(20.0),
           child: SizedBox(
             width: 450,
             child: Column(
@@ -75,21 +75,21 @@ class _UserFormState extends State<UserForm> {
                     children: [
                       TextField(
                         controller: firstnameController,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'First Name',
                         ),
                       ),
-                                            TextField(
+                      TextField(
                         controller: lastnameController,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Last Name',
                         ),
                       ),
-                                            TextField(
+                      TextField(
                         controller: emailController,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Email',
                         ),
@@ -102,7 +102,7 @@ class _UserFormState extends State<UserForm> {
                             foregroundColor: MaterialStateProperty.all<Color>(
                                 const Color.fromARGB(255, 255, 255, 255)),
                             backgroundColor: MaterialStateProperty.all(
-                                Color.fromARGB(255, 42, 141, 12))),
+                                const Color.fromARGB(255, 42, 141, 12))),
                       ),
                     ],
                   ),

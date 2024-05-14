@@ -50,7 +50,7 @@ class UserService {
     }
   }
 
-  // Criar um novo usuário
+  // Cria um novo usuário
   Future<User> createUser(User user) async {
     var response = await http.post(
       Uri.parse('$apiUrl/user/create'),

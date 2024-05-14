@@ -1,3 +1,4 @@
+//Classe
 class User {
   final String id;
   final String title;
@@ -6,6 +7,7 @@ class User {
   final String email;
   final String picture;
 
+  //Função
   User(
       {required this.id,
       required this.title,
